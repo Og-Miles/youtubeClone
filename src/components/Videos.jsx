@@ -2,6 +2,11 @@ import { Stack, Box } from "@mui/material";
 import { ChannelCard, VideoCard } from ".";
 
 const Videos = ({ videos }) => {
+  // Check if videos is an array and not undefined
+  if (!Array.isArray(videos)) {
+    return null; // Or you can return an error message or handle it differently
+  }
+
   return (
     <Stack direction='row' flexWrap='wrap' justifyContent='start' gap={2}>
       {videos.map((item, idx) => (
