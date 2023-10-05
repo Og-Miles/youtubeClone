@@ -43,12 +43,23 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
             }}
           />
 
-          <Typography variant='h6' color='#fff'>
+          <Typography
+            variant='h6'
+            color='#fff'
+            alignItems='center'
+            display='flex'
+            justifyContent='center'
+          >
             {channelDetail?.snippet?.title}
             <CheckCircle sx={{ fontSize: 14, color: "gray", ml: "5px" }} />
           </Typography>
           {channelDetail?.statistics?.subscriberCount && (
-            <Typography>
+            <Typography
+              color='#fff'
+              alignItems='center'
+              display='flex'
+              justifyContent='center'
+            >
               {parseInt(
                 channelDetail?.statistics?.subscriberCount
               ).toLocaleString()}{" "}

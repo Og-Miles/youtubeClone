@@ -31,7 +31,7 @@ const SearchFeed = () => {
         }}
       >
         {" "}
-        Search Results for:
+        Search Results for:{" "}
         <span style={{ color: "#F31503" }}>{searchTerm}</span> Videos
       </Typography>
 
